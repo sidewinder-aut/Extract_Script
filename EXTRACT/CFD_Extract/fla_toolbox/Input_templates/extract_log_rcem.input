@@ -1,0 +1,204 @@
+#-------------------------------------------------------------------------------------------
+#///////// COUNTERSET TO CRANKANGLE ////////////////////////////////////////////////////////
+#-------------------------------------------------------------------------------------------
+#
+counter      : *                        Angle =
+#counter      : Step        Time =
+#
+#------------------------------------------------------------------------------------------
+#///////// EXTRACTION OF GENERAL DATA /////////////////////////////////////////////////////
+#------------------------------------------------------------------------------------------
+#
+./XMGR/gen_mass.res                     : Mass [kg] =
+#./XMGR/gen_density.res                  : Mean Fluid Density [kg/m3] =
+./XMGR/gen_pressure.res                  : Mean Fluid Pressure [N/m2] =
+./XMGR/gen_temperature.res               : Mean Fluid Temperature [K] =
+#./XMGR/use_rohr_aig_s.res                : AI Heat Release Rate [J/s]              =
+#./XMGR/use_rohr_cfm_s.res                : CFM Heat Release Rate [J/s]             =
+#./XMGR/use_rohr_pfl_s.res                : PFL Heat Release Rate [J/s]             =
+#./XMGR/use_rohr_tot_s.res                : Total Heat Release Rate [J/s]           =
+#./XMGR/use_rohr_aig_d.res                : AI Heat Release Rate [J/deg]            =
+#./XMGR/use_rohr_cfm_d.res                : CFM Heat Release Rate [J/deg]           =
+#./XMGR/use_rohr_pfl_d.res                : PFL Heat Release Rate [J/deg]           =
+#./XMGR/use_rohr_tot_d.res                : Total Heat Release Rate [J/deg]         =
+#
+#
+#------------------------------------------------------------------------------------------
+#///////// EXTRACTION OF GENERAL COMBUSTION DATA //////////////////////////////////////////
+#------------------------------------------------------------------------------------------
+#
+#./XMGR/cmb_mass_av_progvar.res          : Mass Averaged Progress Variable [-] =
+#./XMGR/cmb_heat_release.res             : Heat Release Rate [J/s] =
+#./XMGR/cmb_heat_release.res             : Heat Release Rate [J/deg] =
+#./XMGR/cmb_acc_heat_release.res         : Accumulated Heat Release [J] =
+#
+#./XMGR/cmb_nox_mass_frac.res            : NOx Mass Fraction [-] =
+#./XMGR/cmb_nox_form_rate.res            : NOx Formation Rate [1/s] =
+#./XMGR/cmb_nox_form_rate.res            : NOx Formation Rate [1/deg] =
+#./XMGR/cmb_soot_mass_frac.res           : Soot Mass Fraction [-] =
+#./XMGR/cmb_soot_form_rate.res           : Soot Formation Rate [1/s] =
+#./XMGR/cmb_soot_form_rate.res           : Soot Formation Rate [1/deg] =
+#
+#
+#------------------------------------------------------------------------------------------
+#///////// EXTENDED FLOW DATA /////////////////////////////////////////////////////////////
+#------------------------------------------------------------------------------------------
+#
+#./XMGR/flw_mean_volume.res       : %S00  Mean Volume [m3]                              =
+#
+#./XMGR/flw_mean_temp.res         : %S00  Mean Temperature [K]                            =
+#./XMGR/flw_mean_temp_max.res     : %S00  Maximum Temperature [K]                         =
+#./XMGR/flw_mean_temp_min.res     : %S00  Minimum Temperature [K]                         =
+#
+#./XMGR/uo_fv_whd_vel_x.res              : %S00  Mean Velocity Component U [m/s]                 =
+#./XMGR/uo_fv_whd_vel_y.res              : %S00  Mean Velocity Component V [m/s]                 =
+#./XMGR/uo_fv_whd_vel_z.res              : %S00  Mean Velocity Component W [m/s]                 =
+#./XMGR/uo_fv_whd_vel_xyz.res            : %S00  Mean Velocity [m/s]                             =
+#./XMGR/uo_fv_whd_vel_xyz_max.res        : %S00  Maximum Velocity [m/s]                          =
+#./XMGR/uo_fv_whd_vel_xyz_min.res        : %S00  Minimum Velocity [m/s]                          =
+#
+#./XMGR/uo_fv_whd_tke.res                : %S00  Mean Turbulent Kinetic Energy [m2/s2]         =
+#./XMGR/uo_fv_whd_tke_max.res            : %S00  Maximum Turbulent Kinetic Energy [m2/s2]        =
+#./XMGR/uo_fv_whd_tke_min.res            : %S00  Minimum Turbulent Kinetic Energy [m2/s2]        =
+#
+#./XMGR/uo_fv_whd_turb_dissip_r.res      : %S00  Mean Turbulent Dissipation Rate [m2/s3]       =
+#./XMGR/uo_fv_whd_turb_dissip_r_max.res  : %S00  Maximum Turbulent Dissipation Rate [m2/s3]      =
+#./XMGR/uo_fv_whd_turb_dissip_r_min.res  : %S00  Minimum Turbulent Dissipation Rate [m2/s3]      =
+#
+#./XMGR/uo_fv_whd_turb_time_s.res        : %S00  Mean Turbulent Time Scale [s]                   =
+#./XMGR/uo_fv_whd_turb_time_s_max.res    : %S00  Maximum Turbulent Time Scale [s]                =
+#./XMGR/uo_fv_whd_turb_time_s_min.res    : %S00  Minimum Turbulent Time Scale [s]                =
+#
+#./XMGR/uo_fv_whd_turb_length_s.res        : %S00  Mean Turbulent Length Scale [m]                 =
+#./XMGR/uo_fv_whd_turb_length_s_max.res    : %S00  Maximum Turbulent Length Scale [m]              =
+#./XMGR/uo_fv_whd_turb_length_s_min.res    : %S00  Minimum Turbulent Length Scale [m]              =
+#
+#------------------------------------------------------------------------------------------
+#///////// EXTRACTION OF GENERAL SPRAY DATA ///////////////////////////////////////////////
+#------------------------------------------------------------------------------------------
+#
+#./XMGR/spr_max_pene_1.res             : 1% Limit MaxPenetration for Hole No.  1 (m)  =
+#./XMGR/spr_max_pene_1.res             : 1% Limit MaxPenetration for Hole No.  2 (m)  =
+#./XMGR/spr_d10.res                    : Dmean [ D10 ]                       (m)  =
+#./XMGR/spr_d30.res                    : Vlmean[ D30 ]                       (m)  =
+#./XMGR/spr_d32.res                    : Smdt  [ D32 ]                       (m)  =
+#
+#./XMGR/spr_tot_mass_liq_remain.res    : Total Liquid Mass Remaining  [kg] =
+#./XMGR/spr_mass_fuel_injected_ts.res  : Mass of Liq. Inject. this Time Step [kg] =
+#
+#./XMGR/spr_tot_mass_vap_evol.res      : Total Mass of Vapour Evolved [kg] =
+#./XMGR/spr_tot_mass_fuel_inj.res      : Total Mass of Liq. Injected  [kg] =
+#
+#./XMGR/spray.mres                     : %#      1
+#
+#
+#------------------------------------------------------------------------------------------
+#///////// EXTRACTION OF EXTENDED COMBUSTION DATA /////////////////////////////////////////
+#------------------------------------------------------------------------------------------
+#
+#./XMGR/cmb_whd_mixture_frac.res   : %S00  Mean Mixture (Total Fuel Mass) Fraction [kg/kg] =
+#./XMGR/cmb_whd_mixture_mass.res   : %S00  Mean Mixture (Total Fuel) Mass [kg]             =
+#./XMGR/cmb_whd_ub_fuel_frac.res   : %S00  Mean Unburned Fuel Mass Fraction [kg/kg]        =
+#./XMGR/cmb_whd_ub_fuel_mass.res   : %S00  Mean Unburned Fuel Mass [kg]                    =
+#./XMGR/cmb_whd_bt_fuel_frac.res   : %S00  Mean Burned Fuel Mass Fraction [kg/kg]          =
+#./XMGR/cmb_whd_bt_fuel_mass.res   : %S00  Mean Burned Fuel Mass [kg]                      =
+#
+#./XMGR/cmb_fu_mfr.res              : %S00  mean fuel mass fraction [kg/kg]                 =
+#./XMGR/cmb_n2_mfr.res             : %S00  mean nitrogen mass fraction [kg/kg]             =
+#./XMGR/cmb_o2_mfr.res             : %S00  mean oxygen mass fraction [kg/kg]               =
+#./XMGR/cmb_co_mfr.res             : %S00  mean carbon monoxide mass fraction [kg/kg]      =
+#./XMGR/cmb_co2_mfr.res            : %S00  mean carbon dioxide mass fraction [kg/kg]       =
+#./XMGR/cmb_h2o_mfr.res            : %S00  mean water vapour mass fraction [kg/kg]         =
+#
+#./XMGR/cmb_tot_mfrac.res          : %S00  total sum of mass fractions [-]                 =
+#
+#./XMGR/cmb_whd_eqi_rt_tot_chg.res : %S00  Mean Total Charge Equivalence Ratio [-]         =
+#./XMGR/cmb_whd_eqi_rt_ub_chg.res  : %S00  Mean Unburned Charge Equivalence Ratio [-]      =
+#
+#./XMGR/cmb_egr_mfrac.res           : %S00  Mean Residual Gas Mass Fraction [kg/kg]         =
+#./XMGR/cmb_egr_mass.res            : Mean Residual Gas Mass [kg]                     =
+#
+#./XMGR/cmb_mix_gas_const.res      : %S00  mean mixture gas constant [j/kg/k]              =
+#./XMGR/cmb_mix_spec_heat.res      : %S00  mean mixture specific heat [j/kg/k]             =
+#./XMGR/cmb_mix_gas_const.res      : Mean Gas Constant             [J/kg/K] =
+#./XMGR/cmb_mix_spec_heat.res      : Mean Integral Heat Cp         [J/kg/K] =
+#
+#
+#./XMGR/cmb_fr_mass_frc.res         : %S00  Mean FR Mass Fraction [kg/kg]                   =
+#./XMGR/cmb_fb_mass_frc.res         : %S00  Mean FB Mass Fraction [kg/kg]                    =
+#./XMGR/cmb_fq_mass_frc.res         : %S00  Mean FQ Mass Fraction [kg/kg]                   =
+#
+#./XMGR/cmb_fq_mass_frc_max.res     : %S00  Maximum FQ Mass Fraction [kg/kg]                =
+#./XMGR/cmb_fq_mass_frc_min.res     : %S00  Minimum FQ Mass Fraction [kg/kg]                =
+#./XMGR/cmb_fq_react_rate.res       : %S00  Mean FQ Reaction Rate [kg/kg/s]                 =
+#
+#./XMGR/cmb_nox_mfr_mean.res       : %S00  Mean NOx Mass Fraction [kg/kg]                  =
+#./XMGR/cmb_nox_mfr_max.res        : %S00  Maximum NOx Mass Fraction [kg/kg]               =
+#./XMGR/cmb_nox_mfr_min.res        : %S00  Minimum NOx Mass Fraction [kg/kg]               =
+#./XMGR/cmb_nox_mass_mean.res      : %S00  Mean NOx Mass [kg]                              =
+#./XMGR/cmb_nox_rate_mean.res      : %S00  Mean NOx Reaction Rate [kg/kg/s]                =
+#./XMGR/cmb_nox_rate_max.res       : %S00  Maximum NOx Reaction Rate [kg/kg/s]             =
+#./XMGR/cmb_nox_rate_min.res       : %S00  Minimum NOx Reaction Rate [kg/kg/s]             =
+#
+#./XMGR/cmb_soot_mfr_mean.res      : %S00  Mean Soot Mass Fraction [kg/kg]                 =
+#./XMGR/cmb_soot_mfr_max.res       : %S00  Maximum Soot Mass Fraction [kg/kg]              =
+#./XMGR/cmb_soot_mfr_min.res       : %S00  Minimum Soot Mass Fraction [kg/kg]              =
+#./XMGR/cmb_soot_mass_mean.res     : %S00  Mean Soot Mass [kg]                             =
+#./XMGR/cmb_soot_rate_mean.res     : %S00  Mean Soot Reaction Rate [kg/kg/s]               =
+#./XMGR/cmb_soot_rate_max.res      : %S00  Maximum Soot Reaction Rate [kg/kg/s]            =
+#./XMGR/cmb_soot_rate_min.res      : %S00  Minimum Soot Reaction Rate [kg/kg/s]            =
+#
+#
+#./XMGR/cmb_soot_pir.res          : *  Total Particle Inception Rate [kg/s]       =
+#./XMGR/cmb_soot_sgr.res          : *  Total Surface Growth Rate [kg/s]           =
+#./XMGR/cmb_soot_frr.res          : *  Total Fragmentation Rate [kg/s]            =
+#./XMGR/cmb_soot_oxr.res          : *  Total Oxidation Rate [kg/s]                =
+#
+#------------------------------------------------------------------------------------------
+#///////// EMISSIONS v2008 ////////////////////////////////////////////////////////////////
+#------------------------------------------------------------------------------------------
+#
+#./XMGR/cmb_cfm_precursor_mfr.res           : %S00  Mean Precursor Mass Fraction  [-]               =
+#./XMGR/cmb_cfm_precursor_max.res           : %S00  Maximum Precursor Mass Fraction  [-]            =
+#./XMGR/cmb_cfm_precursor_min.res           : %S00  Minimum Precursor Mass Fraction  [-]            =
+#
+#------------------------------------------------------------------------------------------
+#///////// THERMOCHEMISTRY ////////////////////////////////////////////////////////////////
+#------------------------------------------------------------------------------------------
+#
+#./XMGR/thc_ch4_mfr.res         : Mean CH4         Mass Fraction [kg/kg] =
+#./XMGR/thc_o2_mfr.res          : Mean O2          Mass Fraction [kg/kg] =
+#./XMGR/thc_n2_mfr.res          : Mean N2          Mass Fraction [kg/kg] =
+#./XMGR/thc_co2_mfr.res         : Mean CO2         Mass Fraction [kg/kg] =
+#./XMGR/thc_h2o_mfr.res         : Mean H2O         Mass Fraction [kg/kg] =
+#./XMGR/thc_co_mfr.res          : Mean CO          Mass Fraction [kg/kg] =
+#./XMGR/thc_h2_mfr.res          : Mean H2          Mass Fraction [kg/kg] =
+#./XMGR/thc_o_mfr.res           : Mean O           Mass Fraction [kg/kg] =
+#./XMGR/thc_n_mfr.res           : Mean N           Mass Fraction [kg/kg] =
+#./XMGR/thc_oh_mfr.res          : Mean OH          Mass Fraction [kg/kg] =
+#./XMGR/thc_h_mfr.res           : Mean H           Mass Fraction [kg/kg] =
+#./XMGR/thc_no_mfr.res          : Mean NO          Mass Fraction [kg/kg] =
+#./XMGR/thc_sum_mfr.res         : sum of scalar mass fractions [kg/kg] =
+#
+#./XMGR/thc_spec_heat.res                : Mean Specific Heat            [J/kg/K] =
+#./XMGR/thc_gas_const.res                : Mean Gas Constant             [J/kg/K] =
+#
+#------------------------------------------------------------------------------------------
+#///////// USEROUT- ADDITIONAL VALUES  ////////////////////////////////////////////////////
+#------------------------------------------------------------------------------------------
+#
+#./XMGR/uo_swirl_x.res                    : %FIRE-I-USROUT, Ang_Tumble-X :                     
+#./XMGR/uo_swirl_y.res                    : %FIRE-I-USROUT, Ang_Tumble-Y :                     
+#./XMGR/uo_swirl_z.res                    : %FIRE-I-USROUT, Ang_Tumble-Z :                     
+#
+#./XMGR/uo_inlet_massflow.res             : INTEGRATED INLET MASS FLOW RATE  (KG/SEC) =
+#./XMGR/uo_outlet_massflow.res            : INTEGRATED OUTLET MASS FLOW RATE (KG/SEC) = 
+#
+#
+#
+#
+
+#./XMGR/uo_rate_aig_d.res			  : AI Heat Release Rate [J/deg]
+#./XMGR/uo_rate_cfm_d.res        		  : CFM Heat Release Rate [J/deg]
+#./XMGR/uo_rate_pfl_d.res			  : PFL Heat Release Rate [J/deg]
+#./XMGR/uo_rate_tot_d.res                   	  : Total Heat Release Rate [J/deg]
