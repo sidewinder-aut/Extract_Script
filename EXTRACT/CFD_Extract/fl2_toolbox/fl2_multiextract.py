@@ -218,6 +218,9 @@ for row_ndx in range(len(data_lists[0])):
     for col_ndx in range(len(column_index)):
         if debug_flag:
             print"---debug--- row: {a} / column: {b}".format(a = row_ndx, b = col_ndx)
-        out_file.write(data_lists[col_ndx][row_ndx] + '\t')
+        #bugfix - if your want to read out ALL data, you have to remove the newline character from the last column
+        out_file.write((data_lists[col_ndx][row_ndx] + '\t').replace("\n",""))
     out_file.write('\n')
 out_file.close()
+
+
