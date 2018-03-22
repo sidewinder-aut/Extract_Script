@@ -24,9 +24,9 @@ from sys import argv
 # argument check - the user has to specify four input arguments (what to execute on which fl2 file with which input file and where to write it to)
 check = len(argv)
 if check != 4:
-    print "SYNTAX ERROR:"
-    print "you have to enter a command line like:"
-    print "./mext.py <filename.gid> <inputfile.txt> <outputfile.txt>"
+    print("Error: ")
+    print("you have to enter a command line like:")
+    print("./mext.py <filename.gid> <inputfile.txt> <outputfile.txt>")
     sys.exit()
 fl2_name = argv[1]
 in_name = argv[2]
